@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.watch{
+    width:fit-content;
+    height: fit-content;
+    margin: 20px auto;
+    position: relative;
+}
+.hour{
+    width: 25px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 144px;
+    left: 380px;
+    animation-name: hour;
+    animation-iteration-count: infinite;
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+}
+.hour1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.minute{
+    width: 17px;
+    height: 590px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 98px;
+    left: 384.5px;
+    animation-name: minute;
+    animation-iteration-count: infinite;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+}
+.minute1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.second{
+    width: 10px;
+    height: 590px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 98px;
+    left: 387.5px;
+    animation-name: second;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+}
+.second1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 33, 33);
+    border-radius: 10px;
+}
+@keyframes hour{
+    from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}
+@keyframes minute{
+    from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}
+@keyframes second{
+    from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}
